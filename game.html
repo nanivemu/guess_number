@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guess The Number</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game">
+    <h1>🎯 Guess The Number</h1>
+
+    <label>Difficulty:</label>
+    <select id="difficulty">
+      <option value="1">Easy (0–9)</option>
+      <option value="2">Medium (0–99)</option>
+      <option value="3">Hard (0–999)</option>
+      <option value="4">Extreme (0–9999)</option>
+    </select>
+
+    <button onclick="startGame()">Start Game</button>
+
+    <div id="info"></div>
+
+    <input type="number" id="guess" placeholder="Enter guess">
+    <button onclick="checkGuess()">Guess</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
